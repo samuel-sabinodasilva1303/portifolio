@@ -31,3 +31,16 @@ document.addEventListener("DOMContentLoaded", function () {
         overlay.style.display = "none";
     });
 }); 
+
+const contatoLink = document.querySelector('a[href="#footer"]');
+const popupDiv = document.getElementById('popupDiv');
+
+contatoLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    popupDiv.style.display = 'block';
+});
+
+// Função para fechar o pop-up
+function closePopup() {
+    popupDiv.style.display = 'none';
+}
