@@ -108,6 +108,9 @@
     border: 0;
     background: #ffff;
 }
+#card-info{
+  width: 90%;
+}
 .card-info {
   display: none;
   position: fixed;
@@ -125,6 +128,14 @@
   font-size: 18px;
   font-weight: 400;
   font-family: 'Quicksand', sans-serif;
+}
+.card-video{
+  display: flex;
+  justify-content: space-around;
+}
+.card-video p{
+  height: auto;
+  padding: 0 15px;
 }
 
 .overlay {
