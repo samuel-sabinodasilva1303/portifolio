@@ -149,13 +149,57 @@
   z-index: 999;
 }
 #popupDiv {
+  width: 30%;
   display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
+  position: absolute;
+  top: 16%;
+  left: 76%;
   transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 20px;
+  background-color: #ededed96;
+  padding: 9px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   z-index: 1000;
+}
+#popupDiv button{
+  border: 0;
+  background: #ededed96;
+  cursor: pointer;
+  position: absolute;
+  left: 90%;
+}
+#popupDiv .social-icons {
+  display: flex;
+  font-size: 30px;
+  cursor: pointer;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+@media (max-width: 700px) {
+  #popupDiv {
+    width: 60%;
+    top: 48%;
+    left: 35%;
+  }
+  #popupDiv button{
+    left: 86%;
+  }
+  #card-info{
+    overflow: auto;
+    height: 350px;
+  }
+  .card-info{
+    overflow: auto;
+    height: 350px;
+    width: 90%;
+
+  }
+  .card-video{
+    flex-wrap: wrap;
+  }
+  .card-video img{
+    width: 100%;
+  }
+  .card-video p{
+    padding: 0;
+  }
 }
