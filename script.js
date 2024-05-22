@@ -44,3 +44,6 @@ contatoLink.addEventListener('click', function(event) {
 function closePopup() {
     popupDiv.style.display = 'none';
 }
+
+/**Spin */
+
