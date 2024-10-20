@@ -162,6 +162,7 @@ p {
   background: #ffffff;
 }
 #footer .container-fluid .social-icons {
+  padding: 20px;
   display: flex;
   justify-content: center;
   gap: 1em;
@@ -216,7 +217,15 @@ p {
   color: rgb(11 255 212);
 }
 #card-info{
-  width: 90%;
+  width: 80%;
+}
+.card-info.snake{
+  height: 90%;
+}
+
+.errata-snacke{
+  font-size: 10px;
+  color: red;
 }
 .card-info {
   display: none;
@@ -240,6 +249,14 @@ p {
   line-height: 190%;
   font-family: 'Quicksand';
 }
+.card-info p strong{
+  font-weight: 800;
+  color: #000;
+  font-size: 20px;
+}
+#link-btn{
+  margin-bottom: 1em;
+}
 .card-video{
   display: flex;
   justify-content: space-around;
@@ -260,12 +277,11 @@ p {
   z-index: 999;
 }
 #popupDiv {
-  width: 30%;
   display: none;
   position: absolute;
-  top: 14%;
-  left: 80%;
-  transform: translate(-50%, -50%);
+  width: 500px;
+  right: 112px;
+  transform: translate(0, -9%);
   background-color: #0a182d;
   padding: 9px;
   box-shadow: 0 0 10px rgb(94 127 199);
@@ -303,9 +319,9 @@ p {
     margin-bottom: 1em;
   }
   #popupDiv {
-    width: 60%;
-    top: 48%;
-    left: 35%;
+    width: 64%;
+    bottom: 0;
+    transform: translate(-14%, -363%);
   }
   #popupDiv button{
     left: 86%;
